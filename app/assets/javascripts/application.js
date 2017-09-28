@@ -26,9 +26,9 @@ $(document).ready(function() {
 //menu-bar
 $(document).ready(function(){
 
-    $('nav#site-navigation ul li a').click(function(evt) {
+    $('.scroll_nav').click(function(evt) {
       evt.preventDefault();
-      $('html, body').stop().animate({
+      $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
     });
