@@ -1,11 +1,60 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<!-- <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "Hanami", '#', id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help",   '#' %></li>
       </ul>
     </nav>
   </div>
-</header>
+</header> -->
+
+<div class="header">
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Brand</span>
+			</div>
+			<a href="#" class="nav-trigger"><span></span></a>
+		</div>
+		<div class="side-nav">
+			<div class="logo">
+				<i class="fa fa-tachometer"></i>
+				<span>Brand</span>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-user"></i></span>
+							<span>Venue</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+
+							<span><i class="fa fa-envelope"></i></span>
+							<span>Food</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+							<span><i class="fa fa-bar-chart"></i></span>
+							<span>Ideas</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span><i class="fa fa-credit-card-alt"></i></span>
+							<span>Plan</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<script> $(document).ready(function() {
+	$('.nav-trigger').click(function() {
+		$('.side-nav').toggleClass('visible');
+	});
+}); </script>
