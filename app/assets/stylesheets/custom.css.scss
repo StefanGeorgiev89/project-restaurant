@@ -8,26 +8,25 @@ body, html {
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
-  min-height: 100%;
+  //min-height: 100%;
+  height: 500px;
 }
 
 .bgimg-2 {
   background-image: url("Building 1904 x 900.jpg");
-  min-height: 400px;
+  //min-height: 400px;
+  height: 500px;
 }
-
-
 
 .caption {
   position: absolute;
@@ -65,23 +64,24 @@ h3 {
 	position: absolute;
 	width: 100%;
 	z-index: 3;
-	height: 44px;
+	// height: 44px;
 	background-color: #fff;
-	border-bottom: 3px solid #2d3d51;
+	// border-bottom: 3px solid #2d3d51;
 }
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
 .logo {
-	height: 350px;
+	height: 320px;
 	width: 310px;
 	padding: 10px;
 	font-weight: 700;
     background-image: url(logoh.png);
+    background-repeat: no-repeat;
 }
 .header .logo {
 	color: #233245;
 }
 .side-nav .logo {
-	background-color: #233245;
+	background-color: #fff;
 	color: #fff;
 }
 .header .logo {
@@ -129,7 +129,9 @@ h3 {
 }
 /* side navigation styles */
 .side-nav {
-	margin-left: 110em;
+	margin-top: 270px;
+	margin-left: 70%;
+	margin-right: 40%;
 	position: fixed;
 	width: 310px;
 	height: 800px;
@@ -143,10 +145,11 @@ h3 {
 .side-nav ul {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 .side-nav ul li {
 	padding: 16px 16px;
-	border-bottom: 1px solid #3c506a;
+	// border-bottom: 1px solid #3c506a;
 	position: relative;
 }
 .side-nav ul li.active:before {
@@ -170,15 +173,17 @@ h3 {
 }
 .side-nav ul li span:nth-child(2) {
 	margin-left: 10px;
-	font-size: 14px;
+	font-size: 23px;
 	font-weight: 600;
+
 }
 
 
 @media screen and (min-width: 600px) {
 	.header {
-		background-color: #35475e;
+		background-color: #fff;
 		z-index: 1;
+
 	}
 	.header .logo {
 		display: none;
@@ -214,7 +219,7 @@ h3 {
 /* set element styles for desktop */
 @media screen and (min-width: 800px) {
 	.side-nav {
-		width: 200px;
+		width: 310px;
 	}
 	.side-nav ul li span:nth-child(2) {
 		display: inline-block;
@@ -226,9 +231,26 @@ h3 {
 		text-align: left;
 	}
 	.side-nav .logo i {
-		padding-left: 10;
+		padding-left: 10em;
 	}
 	.side-nav .logo span {
 		display: inline-block;
 	}	
+}
+span{
+	padding-left:2.8em;
+}
+
+@fond-face {
+	font-family: Cormorant;
+	src: url(assets\images\cormorant\CormorantSC-Medium.otf);
+}
+
+li {
+	font-family: Cormorant;
+}
+
+#textdiv {
+  margin-left:  450px;
+  margin-right: 550px;
 }
