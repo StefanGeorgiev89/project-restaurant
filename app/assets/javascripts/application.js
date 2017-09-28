@@ -16,3 +16,21 @@
 //= require turbolinks
 //= require_tree .
 
+//navbar
+$(document).ready(function() {
+	$('.nav-trigger').click(function() {
+		$('.side-nav').toggleClass('visible');
+	});
+});
+
+//menu-bar
+$(document).ready(function(){
+
+    $('nav#site-navigation ul li a').click(function(evt) {
+      evt.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+      }, 1000);
+    });
+
+});

@@ -19,7 +19,7 @@ body, html {
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
   //min-height: 100%;
-  height: 500px;
+  height: 490px;
 }
 
 .bgimg-2 {
@@ -70,7 +70,7 @@ h3 {
 }
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
 .logo {
-	height: 320px;
+	height: 290px;
 	width: 310px;
 	padding: 10px;
 	font-weight: 700;
@@ -129,11 +129,11 @@ h3 {
 }
 /* side navigation styles */
 .side-nav {
-	margin-top: 270px;
+	margin-top: 220px;
 	margin-left: 70%;
 	margin-right: 40%;
 	position: fixed;
-	width: 310px;
+	width: 300px;
 	height: 800px;
 	background-color: white;
 	z-index: 1;
@@ -250,7 +250,35 @@ li {
 	font-family: Cormorant;
 }
 
-#textdiv {
-  margin-left:  450px;
-  margin-right: 550px;
+.col-md-8  {
+  margin-left:  135px!important;
+  margin-right: 230px!important;
+  color: #777!important;
+  background-color:white!important;
+  text-align:center!important;
+  padding:50px 80px!important;
+  text-align: justify!important;
+
+}
+
+.col-md-8 h3 {
+	text-align:center!important;
+}
+
+.borderDat {
+	background-color:transparent;
+	font-size:25px;
+	color: #f7f7f7;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.caption span.borderDat {
+  color: #fff;
+  padding: 16px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
