@@ -45,12 +45,15 @@ $(document).ready(function(){
  $(".hide_divs_class").slideUp('slow')
  var c=$("#lamer_id").text();
  if(b!==c) {
-  evt.preventDefault();
  $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
  
 }
 
  $("#lamer_id").text(b);
+ if(b==c){
+   $("#lamer_id").text("default");
+   $(".side-nav").css("margin-top", "220px");
+ }
 
  });
 
