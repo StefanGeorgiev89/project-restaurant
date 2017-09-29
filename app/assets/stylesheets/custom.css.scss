@@ -163,19 +163,20 @@ h3 {
 	background-color: #fff;
 }
 .side-nav ul li a {
-	color: #c8a08c;
+	color: black;
 	display: block;
 	text-decoration: none;
 }
 .side-nav ul li i {
 	color: #0497df;
 	min-width: 20px;
-	text-align: center;
+    text-align: center;
 }
 .side-nav ul li span:nth-child(2) {
-	margin-left: 10px;
-	font-size: 23px;
+    margin-left: 10px;
+	font-size: 34px;
 	font-weight: 600;
+	color: #c8a08c;
 
 }
 
@@ -202,6 +203,7 @@ h3 {
 	}
 	.side-nav ul li span:nth-child(2) {
 		display: none;
+		text-align:center;
 	}
 	.side-nav .logo i {
 		padding-left: 12px;
@@ -214,6 +216,7 @@ h3 {
 	}
 	.side-nav ul li a {
 		text-align: center;
+		font-size: 20px;
 	}
 
 }
@@ -224,12 +227,15 @@ h3 {
 	}
 	.side-nav ul li span:nth-child(2) {
 		display: inline-block;
+		text-align: center;
 	}
 	.side-nav ul li i {
 		font-size: 16px;
+		text-align: center;
 	}
 	.side-nav ul li a {
-		text-align: left;
+		text-align: center;
+		font-size: 20px;
 	}
 	.side-nav .logo i {
 		padding-left: 10em;
@@ -239,7 +245,8 @@ h3 {
 	}	
 }
 span{
-	padding-left:2.8em;
+	text-align: center;
+
 }
 
 @fond-face {
@@ -283,3 +290,4 @@ li {
   font-size: 25px;
   letter-spacing: 10px;
 }
+

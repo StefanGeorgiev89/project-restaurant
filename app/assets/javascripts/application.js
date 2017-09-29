@@ -16,28 +16,29 @@
 //= require turbolinks
 //= require_tree .
 
-//navbar
-$(document).ready(function() {
-  $('.nav-trigger').click(function() {
-    $('.side-nav').toggleClass('visible');
-  });
-});
+
 
 //menu-bar
 $(document).ready(function(){
 
-    $('.scroll_nav').click(function(evt) {
+    $('.scroll_sub_nav').click(function(evt) {
       evt.preventDefault();
       $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
+
+
     });
+
 
 });
 $(document).ready(function(){
 
  $(".scroll_nav").click(function(evt){
   $(".side-nav").css("margin-top", "0px");
+  $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+      }, 1000);
         evt.preventDefault();
  $(".hide_divs_class").slideUp('slow')
  $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
@@ -45,3 +46,12 @@ $(document).ready(function(){
  });
 
 });
+
+
+    $('.scroll_sub_nav').click(function(evt) {
+      evt.preventDefault();
+      $('html, body').animate({
+        scrollTop: $( "#" + $(this).text() ).offset().top
+      }, 1000);
+    });
+
