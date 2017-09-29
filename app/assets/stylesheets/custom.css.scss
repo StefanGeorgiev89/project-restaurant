@@ -70,6 +70,7 @@ h3 {
 }
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
 .logo {
+	margin-top: 40px;
 	height: 290px;
 	width: 310px;
 	padding: 10px;
@@ -166,6 +167,7 @@ h3 {
 	color: black;
 	display: block;
 	text-decoration: none;
+	font-size: 25px;
 }
 .side-nav ul li i {
 	color: #0497df;
@@ -195,6 +197,7 @@ h3 {
 	}
 	.nav-trigger span, .nav-trigger span:before, span:after {
 		background-color: #fff;
+		font-size: 30px;
 	}
 	.side-nav {
 		display: block;
@@ -235,7 +238,8 @@ h3 {
 	}
 	.side-nav ul li a {
 		text-align: center;
-		font-size: 20px;
+		font-size: 22px;
+		font-weight: bold;
 	}
 	.side-nav .logo i {
 		padding-left: 10em;
@@ -293,5 +297,16 @@ li {
 
 #hideon_content{
 	display: none;
-	 visibility: hidden;
+	visibility: hidden;
+}
+
+#main_div h2 {
+	color: #e6878c;
+	font-family: Cormorant;
+	font-size: 32pt;
+}
+
+p {
+	font-family: Cormorant;
+	font-size: 22pt;
 }

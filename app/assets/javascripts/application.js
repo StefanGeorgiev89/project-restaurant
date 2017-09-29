@@ -66,3 +66,9 @@ $(document).ready(function(){
         scrollTop: $( "#" + $(this).text() ).offset().top
       }, 1000);
     });
+
+    $(document).ready(function() {
+  $('.nav-trigger').click(function() {
+    $('.side-nav').toggleClass('visible');
+  });
+});
