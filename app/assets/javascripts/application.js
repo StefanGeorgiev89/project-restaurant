@@ -30,17 +30,28 @@ $(document).ready(function(){
 
 
 });
+
 $(document).ready(function(){
 
  $(".scroll_nav").click(function(evt){
+
+   var b=$(this).closest('.dropdown').find('.hide_divs_class').attr('id')
+   
   $(".side-nav").css("margin-top", "0px");
   $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
         evt.preventDefault();
  $(".hide_divs_class").slideUp('slow')
+ var c=$("#lamer_id").text();
+ if(b!==c) {
+  evt.preventDefault();
  $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
  
+}
+
+ $("#lamer_id").text(b);
+
  });
 
 });
