@@ -18,7 +18,9 @@
 
 
 
+
 //menu-bar
+
 $(document).ready(function(){
 
     $('.scroll_sub_nav').click(function(evt) {
@@ -53,5 +55,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $( "#" + $(this).text() ).offset().top
       }, 1000);
+
     });
+
 
