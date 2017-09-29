@@ -18,9 +18,9 @@
 
 //navbar
 $(document).ready(function() {
-	$('.nav-trigger').click(function() {
-		$('.side-nav').toggleClass('visible');
-	});
+  $('.nav-trigger').click(function() {
+    $('.side-nav').toggleClass('visible');
+  });
 });
 
 //menu-bar
@@ -32,5 +32,16 @@ $(document).ready(function(){
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
     });
+
+});
+$(document).ready(function(){
+
+ $(".scroll_nav").click(function(evt){
+  $(".side-nav").css("margin-top", "0px");
+        evt.preventDefault();
+ $(".hide_divs_class").slideUp('slow')
+ $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
+ 
+ });
 
 });
