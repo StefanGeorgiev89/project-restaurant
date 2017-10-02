@@ -7,8 +7,8 @@ body {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
   overflow-x: hidden!important;
-   // overflow-x: hidden;
-    // overflow-y: hidden;
+ // overflow-x: hidden;
+ // overflow-y: hidden;
 
 }
 
@@ -23,7 +23,7 @@ body {
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
   //min-height: 100%;
-  height: 33.325em;
+  height: 31em;
 }
 
 .bgimg-2 {
@@ -86,11 +86,11 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8 {
-        background-attachment: scroll;
-    }
-}
+// @media only screen and (max-device-width: 1024px) {
+//     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8 {
+//         background-attachment: scroll;
+//     }
+// }
 
 /* header */
 .header {
@@ -160,6 +160,7 @@ h3 {
 .nav-trigger span:after {
 	top: 6px;
 }
+
 /* side navigation styles */
 .side-nav {
 	margin-top: 200px;
@@ -182,7 +183,7 @@ h3 {
 	list-style-type: none;
 }
 .side-nav ul li {
-	padding: 9px 8px;
+	padding: 4px 8px;
 	// border-bottom: 1px solid #3c506a;
 	position: relative;
 }
@@ -218,10 +219,10 @@ h3 {
 
 
 @media screen and (min-width: 600px) {
+
 	.header {
 		background-color: #fff;
 		z-index: 1;
-
 	}
 	.header .logo {
 		display: none;
@@ -305,6 +306,7 @@ li {
   // padding:50px 80px!important;
   text-align: justify!important;
   width:800px!important;
+
 }
 
 .col-md-8 h3 {
@@ -320,7 +322,7 @@ li {
     margin-left: auto!important;
     margin-right: auto!important;
     width: 600px!important;
-
+    min-width: 300px!important;
 }
 // p {
 // 	font-family: Cormorant;
@@ -352,11 +354,11 @@ li {
 	visibility: hidden;
 }
 
-#main_div h2 {
+#main_div_venue h2 {
 	color: #e6878c;
 	font-family: Cormorant;
-	font-size: 22pt;
-	margin-left:6.5em;
+	font-size: 27pt;
+	margin-left:2.4em;
 }
 
 // p {
@@ -369,6 +371,7 @@ li {
 
 h2 {
 	font-family: Cormorant;
-	font-size: 32pt;
-	margin-left: 2.0em;
+	font-size: 24pt;
+	margin-left: 2.6em;
 }
+
