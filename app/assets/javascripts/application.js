@@ -16,13 +16,19 @@
 //= require turbolinks
 //= require_tree .
 
-//navbar
+
+
+
+//menu-bar
+
 $(document).ready(function(){
 
     $('.scroll_sub_nav').click(function(evt) {
       evt.preventDefault();
+      var b = $('#change_content').children().first()
+       $(b).html(($( $(this).attr('href')).html()))
       $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
+        scrollTop: $( "#change_content" ).offset().top
       }, 1000);
 
 
@@ -60,15 +66,26 @@ $(document).ready(function(){
 });
 
 
-    $('.scroll_sub_nav').click(function(evt) {
-      evt.preventDefault();
-      $('html, body').animate({
-        scrollTop: $( "#" + $(this).text() ).offset().top
-      }, 1000);
-    });
+    // $('.scroll_sub_nav').click(function(evt) {
+    //   evt.preventDefault();
+    //   $('html, body').animate({
+    //     scrollTop: $( "#" + $(this).text() ).offset().top
+    //   }, 1000);
+
+    // });
 
     $(document).ready(function() {
   $('.nav-trigger').click(function() {
     $('.side-nav').toggleClass('visible');
   });
 });
+//       $(document).ready(function(){
+
+//     $('.scroll_sub_nav').click(function(evt) {
+//       evt.preventDefault();
+//       var b = $('#blabla').children().first()
+//       // $(b).replaceWith($( $(this).attr('href')))
+//      $(b).html(($( $(this).attr('href')).html()))
+// })
+// });
+
