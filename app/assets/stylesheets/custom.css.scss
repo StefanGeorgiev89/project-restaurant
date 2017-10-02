@@ -12,9 +12,9 @@ body {
 
 }
 
-.bgimg-1, .bgimg-2 {
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 ,.bgimg-8{
   position: relative;
-  opacity: 0.65;
+  // opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,15 +23,44 @@ body {
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
   //min-height: 100%;
-  height: 450px;
+  height: 33.325em;
 }
 
 .bgimg-2 {
   background-image: url("Building 1904 x 900.jpg");
   //min-height: 400px;
-  height: 500px;
+  height: 33.325em;
 }
-
+.bgimg-3 {
+  background-image: url("3.jpg");
+  //min-height: 400px;
+  height: 33.325em;
+}
+.bgimg-4 {
+  background-image: url("4.jpg");
+  //min-height: 400px;
+  height: 33.325em;
+}
+.bgimg-5{
+  background-image: url("5.jpg");
+  //min-height: 400px;
+  height: 33.325em;
+}
+.bgimg-6{
+  background-image: url("6.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-7{
+  background-image: url("7.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-8{
+  background-image: url("8.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
 .caption {
   position: absolute;
   left: 0;
@@ -58,7 +87,7 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7,.bgimg-8 {
         background-attachment: scroll;
     }
 }
@@ -76,7 +105,7 @@ h3 {
 .logo {
 	height: 300px;
 	width: 310px;
-	padding: 5px;
+	padding: 3px;
 	font-weight: 700;
     background-image: url(logoh.png);
     background-repeat: no-repeat;
@@ -133,7 +162,7 @@ h3 {
 }
 /* side navigation styles */
 .side-nav {
-	margin-top: 220px;
+	margin-top: 200px;
 	margin-left: 70%;
 	margin-right: 40%;
 	margin-bottom:0px;
@@ -268,19 +297,38 @@ li {
 }
 
 .col-md-8  {
-  margin-left:  135px!important;
-  margin-right: 230px!important;
+  margin-left: 28em!important;
+  margin-right: 100em!important;
   color: #777!important;
   background-color:white!important;
   text-align:center!important;
-  padding:50px 80px!important;
+  // padding:50px 80px!important;
   text-align: justify!important;
+  width:800px!important;
 }
 
 .col-md-8 h3 {
 	text-align:center!important;
 }
+.col-md-8 p {
+	font-family: Cormorant;
+	font-size: 12pt!important;
+ //margin-left:20em!important;
+ //margin-right: 130em!important;
+ //width:800px!important;
+ //margin-right: 120px!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    width: 600px!important;
 
+}
+// p {
+// 	font-family: Cormorant;
+// 	font-size: 12pt;
+//     margin-left:20em!important;
+//     margin-right: 130em!important;
+// 	width:800px!important;
+// }
 .borderDat {
 	background-color:transparent;
 	font-size:25px;
@@ -307,10 +355,20 @@ li {
 #main_div h2 {
 	color: #e6878c;
 	font-family: Cormorant;
-	font-size: 32pt;
+	font-size: 22pt;
+	margin-left:6.5em;
 }
 
-p {
+// p {
+// 	font-family: Cormorant;
+// 	font-size: 22pt;
+// }
+.row{
+	height:53.34em;
+}
+
+h2 {
 	font-family: Cormorant;
-	font-size: 22pt;
+	font-size: 32pt;
+	margin-left: 2.0em;
 }
