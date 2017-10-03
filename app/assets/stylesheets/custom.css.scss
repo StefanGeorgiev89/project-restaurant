@@ -12,7 +12,7 @@ body {
 
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 ,.bgimg-8{
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 ,.bgimg-8,.bgimg-9,.bgimg-10,.bgimg-11,.bgimg-12{
   position: relative;
   // opacity: 0.65;
   background-attachment: fixed;
@@ -59,6 +59,26 @@ body {
 }
 .bgimg-8{
   background-image: url("8.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-9{
+  background-image: url("9.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-10{
+  background-image: url("10.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-11{
+  background-image: url("11.jpg");
+  //min-height: 400px;
+   height: 33.325em;
+}
+.bgimg-12{
+  background-image: url("12.jpg");
   //min-height: 400px;
    height: 33.325em;
 }
