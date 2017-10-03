@@ -46,7 +46,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
  $(".scroll_nav").click(function(evt){
-
+        evt.preventDefault();
    var b=$(this).closest('.dropdown').find('.hide_divs_class').attr('id')
    
   $(".side-nav").css("margin-top", "0px");
@@ -54,18 +54,18 @@ $(document).ready(function(){
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
         evt.preventDefault();
- $(".hide_divs_class").slideUp('slow')
- var c=$("#lamer_id").text();
- if(b!==c) {
- $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
+ // $(".hide_divs_class").slideUp('slow')
+//  var c=$("#lamer_id").text();
+//  if(b!==c) {
+//  $(this).closest('.dropdown').find('.hide_divs_class').slideDown('slow');
  
-}
+// }
 
- $("#lamer_id").text(b);
- if(b==c){
-   $("#lamer_id").text("default");
-   $(".side-nav").css("margin-top", "220px");
- }
+//  $("#lamer_id").text(b);
+//  if(b==c){
+//    $("#lamer_id").text("default");
+//    $(".side-nav").css("margin-top", "220px");
+//  }
 
  });
 
@@ -73,7 +73,13 @@ $(document).ready(function(){
 
 
 
+    // $('.scroll_sub_nav').click(function(evt) {
+    //   evt.preventDefault();
+    //   $('html, body').animate({
+    //     scrollTop: $( $(this).attr('href')).offset().top
+    //   }, 1000);
 
+    // });
 
     // $('.scroll_sub_nav').click(function(evt) {
     //   evt.preventDefault();
@@ -159,18 +165,18 @@ if(y_scroll_pos > 5200 && y_scroll_pos < 6000){
       //
       //
       
-
-if(y_scroll_pos > 6000 && y_scroll_pos < 9900) {
+  if(y_scroll_pos < 6001 ||y_scroll_pos >9900 ){
+           $("#main_div_food").css("display", "none");
+        $("#hide_divs_id_two").slideUp('slow');
+         // $("#c_food").css("font-size","28px");
+    }
+if(y_scroll_pos > 6001 && y_scroll_pos < 9900) {
        $("#main_div_food").css("display", "block");
        $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_two").slideDown('slow');
        // $("#c_food").css("font-size","35px");
     }
-     if(y_scroll_pos < 6000 ||y_scroll_pos >9900 ){
-           $("#main_div_food").css("display", "none");
-        $("#hide_divs_id_two").slideUp('slow');
-         // $("#c_food").css("font-size","28px");
-    }
+ 
     if(y_scroll_pos > 7800 && y_scroll_pos < 8600){
          $("#regular_div").css("display", "block");
          // $("#c_regular").css("font-size","35px");
@@ -189,4 +195,53 @@ if(y_scroll_pos > 6000 && y_scroll_pos < 9900) {
          $("#wedding_menu_div").css("display", "none");
          // $("#c_wedding_menu").css("font-size","25px");
       }
+      //Ideas
+      //
+      //
+
+        if(y_scroll_pos < 9901 ||y_scroll_pos >13800 ){
+           $("#main_div_ideas").css("display", "none");
+        $("#hide_divs_id_three").slideUp('slow');
+         // $("#c_ideas").css("font-size","28px");
+    }
+if(y_scroll_pos > 9901 && y_scroll_pos < 13800) {
+       $("#main_div_ideas").css("display", "block");
+       $(".side-nav").css("margin-top", "0px");
+       $("#hide_divs_id_three").slideDown('slow');
+       // $("#c_ideas").css("font-size","35px");
+    }
+ 
+    if(y_scroll_pos > 11700 && y_scroll_pos < 12500){
+         $("#yours_div").css("display", "block");
+         // $("#c_yours").css("font-size","35px");
+      
+    }
+    if(y_scroll_pos < 11700 || y_scroll_pos > 12500){
+         $("#yours_div").css("display", "none");
+         // $("#c_yours").css("font-size","25px");
+      }
+      if(y_scroll_pos > 13000 && y_scroll_pos < 13800){
+         $("#mine_div").css("display", "block");
+         // $("#c_mine").css("font-size","35px");
+      
+    }
+    if(y_scroll_pos < 13000 || y_scroll_pos > 13800){
+         $("#mine_div").css("display", "none");
+         // $("#c_mine").css("font-size","25px");
+      }
+      //Plan
+      //
+      //
+
+  if(y_scroll_pos < 14300 ||y_scroll_pos >15100 ){
+      $("#main_div_plan").css("display", "none");
+      // $("#hide_divs_id_four").slideUp('slow');
+      // $("#c_plan").css("font-size","28px");
+    }
+if(y_scroll_pos > 14300 && y_scroll_pos < 15100) {
+       $("#main_div_plan").css("display", "block");
+       $(".side-nav").css("margin-top", "0px");
+       // $("#hide_divs_id_four").slideDown('slow');
+       // $("#c_plan").css("font-size","35px");
+    }
     });
