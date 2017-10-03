@@ -19,6 +19,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 110em;
 }
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
@@ -80,8 +81,8 @@ body {
 
 h3 {
   letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  // text-transform: uppercase;
+  // font: 20px "Lato", sans-serif;
   color: black;
 }
 
@@ -112,7 +113,7 @@ h2 {
 	height: 300px;
 	width: 310px;
 	padding: 3px;
-	font-weight: 700;
+	// font-weight: 700;
     background-image: url(logoh.png);
     background-repeat: no-repeat;
 }
@@ -130,7 +131,7 @@ h2 {
 	height: 44px;
 	z-index: 1;
 	padding: 5px;
-	font-weight: 700;
+	// font-weight: 700;
 	color: #233245;
 }
 .logo  i {
@@ -138,7 +139,7 @@ h2 {
 }
 .logo span {
 	margin-left: 5px;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 }
 .nav-trigger {
 	position: relative;
@@ -206,7 +207,7 @@ h2 {
 .side-nav ul li a {
 	color: black;
 	display: block;
-	text-decoration: none;
+	// text-decoration: none;
 	font-size: 25px;
 }
 .side-nav ul li i {
@@ -217,7 +218,7 @@ h2 {
 .side-nav ul li span:nth-child(2) {
     // margin-left: 10px;
 	font-size: 28px;
-	font-weight: 600;
+	// font-weight: 600;
 	color: #c8a08c;
 	// border-top: 20px;
 
@@ -276,11 +277,13 @@ h2 {
 	.side-nav ul li i {
 		font-size: 16px;
 		text-align: center;
+		font-family: Cormorant!important;
 	}
 	.side-nav ul li a {
 		text-align: center;
 		font-size: 22px;
-		font-weight: bold;
+		// font-weight: bold;
+		font-family: Cormorant!important;
 	}
 	.side-nav .logo i {
 		padding-left: 10em;
@@ -295,8 +298,8 @@ span{
 }
 
 @fond-face {
-	font-family: Cormorant;
-	src: url(assets\images\cormorant\CormorantSC-Medium.otf);
+	font-family: Cormorant!important;
+	src: url(assets\images\cormorant\CormorantSC-Medium.otf)!important;
 }
 
 li {
@@ -308,7 +311,7 @@ li {
   margin-right: 28em!important;
   color: #777!important;
   background-color:white!important;
-  text-align:center!important;
+  // text-align:center!important;
   // padding:50px 80px!important;
   text-align: justify!important;
   width:800px!important;
@@ -318,21 +321,22 @@ li {
 .col-md-8 h3 {
 	text-align:center!important;
 	// color: black!important;
-	font-family: Cormorant;
-	margin-left: 1em!important;
+	font-family: Cormorant!important;
+	margin-left: 1.7em!important;
 }
 .col-md-8 h2 {
 	margin-right: 45em!important;
+	font-family: Cormorant!important;
 }
 
 .col-md-8 p {
-	font-family: Cormorant;
+	font-family: Cormorant!important;
 	font-size: 12pt!important;
 	color:black!important;
  //margin-left:20em!important;
  //margin-right: 130em!important;
  //width:800px!important;
- //margin-right: 120px!important;
+ //margin-right: 120px!important;te
     margin-left: 2.4em!important;
     margin-right: auto!important;
     width: 600px!important;
@@ -342,37 +346,45 @@ li {
 .col-md-8 {
     margin-left:0.5em!important;
     margin-right:10em!important;
+    font-family: Cormorant!important;
 	}
 .col-md-8 p {
     margin-left:3em!important;
     margin-right:11em!important;
+    font-family: Cormorant!important;
 	}
 .col-md-8 h3 {
 	margin-left:1.3em!important;
     margin-right:12em!important;
+    font-family: Cormorant!important;
    }
-   .col-md-8 h2 {
+.col-md-8 h2 {
 	margin-left:1.4em!important;
     margin-right:12em!important;
+    font-family: Cormorant!important;
    }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  .col-md-8 {
+.col-md-8 {
     margin-left:1em!important;
     margin-right:30em!important;
+    font-family: Cormorant!important;
 	}
 .col-md-8 p {
     margin-left:2.5em!important;
     margin-right:11em!important;
+    font-family: Cormorant!important;
 	}
 .col-md-8 h3 {
 	margin-left:1.2em!important;
     margin-right:12em!important;
+    font-family: Cormorant!important;
    }
  .col-md-8 h2 {
     margin-left:1.3em!important;
     margin-right:12em!important;
+    font-family: Cormorant!important;
    }
 }
 // p {
@@ -408,7 +420,7 @@ li {
 #main_div_venue h3 {
 	color: #e6878c;
 	font-family: Cormorant;
-	font-size: 27pt;
+	// font-size: 27pt;
 	margin-right:12.6em;
 }
 
@@ -420,5 +432,7 @@ li {
 	height:53.34em;
 }
 
-
+.scroll_sub_nav {
+	font-family: Cormorant!important;
+}
 
