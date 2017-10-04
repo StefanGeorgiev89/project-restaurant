@@ -137,95 +137,111 @@ $(window).on('scroll', function(evt) {
       var twelfth = twelfth_img.offset().top -60
 
       // alert(second)
-   if(y_scroll_pos < 150 || y_scroll_pos >6000 ){
+   if(y_scroll_pos < 150 || y_scroll_pos >4700 ){
            $("#main_div_venue").css("display", "none");
        $(".side-nav").css("margin-top", "180px");
         $("#hide_divs_id_one").slideUp('slow');
          // $("#c_vanue").css("font-size","28px");
+         $('html, body').clearQueue();
     }
           evt.preventDefault();
-    if(y_scroll_pos > 150 && y_scroll_pos < 6000) {
+    if(y_scroll_pos > 150 && y_scroll_pos < 4700) {
        $("#main_div_venue").css("display", "block");
        $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_one").slideDown('slow');
        // $("#c_vanue").css("font-size","35px");
+       $('html, body').clearQueue();
 
     }
           evt.preventDefault();
     if(y_scroll_pos > second && y_scroll_pos <second+800){
          $("#building_div").css("display", "block");
          // $("#c_building").css("font-size","35px");
+         $('html, body').clearQueue();
     
     }
           evt.preventDefault();
      if(y_scroll_pos < second || y_scroll_pos > second+800){
          $("#building_div").css("display", "none");
            // $("#c_building").css("font-size","25px");
+           $('html, body').clearQueue();
       }
             evt.preventDefault();
    if(y_scroll_pos > third && y_scroll_pos < third+800){
          $("#terrace_div").css("display", "block");
            // $("#c_terrace").css("font-size","35px");
+           $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < third || y_scroll_pos > third+800){
          $("#terrace_div").css("display", "none");
           // $("#c_terrace").css("font-size","25px");
+          $('html, body').clearQueue();
       }
     
       if(y_scroll_pos > fourth && y_scroll_pos < fourth+800){
          $("#bar_div").css("display", "block");
           // $("#c_bar").css("font-size","35px");
+          $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < fourth|| y_scroll_pos > fourth+800){
          $("#bar_div").css("display", "none");
            // $("#c_bar").css("font-size","25px");
+           $('html, body').clearQueue();
       }
 
 if(y_scroll_pos > fifth && y_scroll_pos < fifth+800){
          $("#main_area_div").css("display", "block");
          // $("#c_main_area").css("font-size","35px");
+         $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < fifth || y_scroll_pos > fifth+800){
          $("#main_area_div").css("display", "none");
          // $("#c_main_area").css("font-size","25px");
+         $('html, body').clearQueue();
       }
 
       // FOOD  
       //
       //
       
-  if(y_scroll_pos < sixth|| y_scroll_pos >9900 ){
+  if(y_scroll_pos < sixth|| y_scroll_pos >7504){
         $("#main_div_food").css("display", "none");
         $("#hide_divs_id_two").slideUp('slow');
          // $("#c_food").css("font-size","28px");
+         $('html, body').clearQueue();
     }
-if(y_scroll_pos > sixth&& y_scroll_pos < 9900) {
+if(y_scroll_pos > sixth&& y_scroll_pos < 7504) {
        $("#main_div_food").css("display", "block");
        $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_two").slideDown('slow');
        // $("#c_food").css("font-size","35px");
+       $('html, body').clearQueue();
     }
  
     if(y_scroll_pos > seventh && y_scroll_pos < seventh+800){
          $("#regular_div").css("display", "block");
          // $("#c_regular").css("font-size","35px");
+         $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < seventh || y_scroll_pos > seventh+800){
          $("#regular_div").css("display", "none");
          // $("#c_regular").css("font-size","25px");
+         $('html, body').clearQueue();
       }
       if(y_scroll_pos > eighth && y_scroll_pos < eighth+800){
          $("#wedding_menu_div").css("display", "block");
          // $("#c_wedding_menu").css("font-size","35px");
+         $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < eighth || y_scroll_pos > eighth+800){
          $("#wedding_menu_div").css("display", "none");
          // $("#c_wedding_menu").css("font-size","25px");
+         $('html, body').clearQueue();
       }
       //Ideas
       //
@@ -235,31 +251,36 @@ if(y_scroll_pos > sixth&& y_scroll_pos < 9900) {
            $("#main_div_ideas").css("display", "none");
         $("#hide_divs_id_three").slideUp('slow');
          // $("#c_ideas").css("font-size","28px");
+         $('html, body').clearQueue();
     }
 if(y_scroll_pos > ninth && y_scroll_pos < 14200) {
        $("#main_div_ideas").css("display", "block");
        $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_three").slideDown('slow');
        // $("#c_ideas").css("font-size","35px");
+       $('html, body').clearQueue();
     }
  
     if(y_scroll_pos > tenth && y_scroll_pos < tenth+800){
          $("#yours_div").css("display", "block");
          // $("#c_yours").css("font-size","35px");
+         $('html, body').clearQueue();
       
     }
     if(y_scroll_pos < tenth || y_scroll_pos > tenth+800){
          $("#yours_div").css("display", "none");
          // $("#c_yours").css("font-size","25px");
+         $('html, body').clearQueue();
       }
-      if(y_scroll_pos > eleventh && y_scroll_pos < eleventh+800){
+      if(y_scroll_pos > eleventh && y_scroll_pos < eleventh+1100){
          $("#mine_div").css("display", "block");
          // $("#c_mine").css("font-size","35px");
-      
+      $('html, body').clearQueue();
     }
-    if(y_scroll_pos < eleventh || y_scroll_pos > eleventh+800){
-         $("#mine_div").css("display", "none");
+    if(y_scroll_pos < eleventh || y_scroll_pos > eleventh+1100){
+         $("#mine_div").css("display", "block");
          // $("#c_mine").css("font-size","25px");
+          $('html, body').clearQueue();
       }
       //Plan
       //
@@ -269,11 +290,13 @@ if(y_scroll_pos > ninth && y_scroll_pos < 14200) {
       $("#main_div_plan").css("display", "none");
       // $("#hide_divs_id_four").slideUp('slow');
       // $("#c_plan").css("font-size","28px");
+      $('html, body').clearQueue();
     }
 if(y_scroll_pos > twelfth && y_scroll_pos < twelfth+800) {
        $("#main_div_plan").css("display", "block");
        $(".side-nav").css("margin-top", "0px");
        // $("#hide_divs_id_four").slideDown('slow');
        // $("#c_plan").css("font-size","35px");
+       $('html, body').clearQueue();
     }
     });

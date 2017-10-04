@@ -131,7 +131,7 @@ h2 {
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
 .logo {
 	height: 18.75em;
-	width: 19.375em;
+	width: 20.5em;
 	padding: 0.1875em;
 	// font-weight: 700;
     background-image: url(logoh.png);
@@ -191,7 +191,7 @@ h2 {
 /* side navigation styles */
 .side-nav {
 	margin-top: 12.5em;
-	margin-left: 70%;
+	margin-left: 69%;
 	margin-right: 40%;
 	margin-bottom:0px;
 	position: fixed;
@@ -288,7 +288,8 @@ h2 {
 /* set element styles for desktop */
 @media screen and (min-width: 800px) {
 	.side-nav {
-		width: 19.375em;
+		width: 20.5em;
+		height: 120em;
 	}
 	.side-nav ul li span:nth-child(2) {
 		display: inline-block;
@@ -330,7 +331,7 @@ li {
 
 /* text in body*/
 .col-md-8  {
-  margin-left:28em!important;
+  margin-left:27em!important;
   margin-right: 28em!important;
   color: #777!important;
   background-color:white!important;
@@ -390,9 +391,9 @@ li {
     margin-right:12em!important;
     font-family: Cormorant!important;
    }
-   // .side-nav{
-   // 	margin-bottom: 320em;
-   // }
+   .side-nav {
+	margin-left: 68%;
+}
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -417,9 +418,7 @@ li {
     margin-right:12em!important;
     font-family: Cormorant!important;
    }
-   // .side-nav{
-   // 	margin-bottom: 0px;
-   // }
+ 
 }
 // p {
 // 	font-family: Cormorant;
