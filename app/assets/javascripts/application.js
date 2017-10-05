@@ -146,12 +146,12 @@ $(window).on('scroll', function(evt) {
       var twelfth = twelfth_img.offset().top -60
       var bot_element=$("#last_element")
       var bottom = bot_element.offset().top
-
-    if(y_scroll_pos > 150 && y_scroll_pos < 4700 ) {
+// alert(eleventh)
+    if(y_scroll_pos > 150 && y_scroll_pos < sixth ) {
        $("#main_div_venue").css("display", "block");     
        $("#hide_divs_id_one").slideDown('slow');    
     }
-   if(y_scroll_pos < 150 || y_scroll_pos >4700 ){
+   if(y_scroll_pos < 150 || y_scroll_pos >sixth ){
         $("#main_div_venue").css("display", "none");
         $("#hide_divs_id_one").slideUp('slow');
     }
@@ -202,14 +202,14 @@ if(y_scroll_pos > fifth && y_scroll_pos < fifth+800){
       //
       //
        
-  if(y_scroll_pos < sixth|| y_scroll_pos >7504){
+  if(y_scroll_pos < sixth|| y_scroll_pos >ninth){
         $("#main_div_food").css("display", "none");
         $("#hide_divs_id_two").slideUp('slow');
       
          // $("#c_food").css("font-size","28px");
     }
      
-if(y_scroll_pos > sixth&& y_scroll_pos < 7504) {
+if(y_scroll_pos > sixth&& y_scroll_pos < ninth) {
        $("#main_div_food").css("display", "block");
        $("#hide_divs_id_two").slideDown('slow');
          
@@ -239,12 +239,12 @@ if(y_scroll_pos > sixth&& y_scroll_pos < 7504) {
       //
       //
 
-        if(y_scroll_pos < ninth ||y_scroll_pos >10200){
+        if(y_scroll_pos < ninth ||y_scroll_pos > eleventh ){
            $("#main_div_ideas").css("display", "none");
         $("#hide_divs_id_three").slideUp('slow');
          // $("#c_ideas").css("font-size","28px");
     }
-if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
+if(y_scroll_pos > ninth && y_scroll_pos <  eleventh ) {
        $("#main_div_ideas").css("display", "block");
        $("#hide_divs_id_three").slideDown('slow');
        // $("#c_ideas").css("font-size","35px");
@@ -259,7 +259,7 @@ if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
          $("#yours_div").css("display", "none");
          // $("#c_yours").css("font-size","25px");
       }
-      if(y_scroll_pos > eleventh && y_scroll_pos < eleventh+970){
+      if(y_scroll_pos > eleventh && y_scroll_pos < eleventh+800){
 
          $("#mine_div").css("display", "block");
          $('html, body').clearQueue();
@@ -267,7 +267,7 @@ if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
         
       
     }
-    if(y_scroll_pos < eleventh || y_scroll_pos > eleventh+1200){
+    if(y_scroll_pos < eleventh || y_scroll_pos > eleventh+800){
          $("#mine_div").css("display", "block");
          $('html, body').clearQueue();
      
@@ -277,12 +277,12 @@ if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
       //
       //
 
-  if(y_scroll_pos < 10354.75-800 ||y_scroll_pos >twelfth+800 ){
+  if(y_scroll_pos <  eleventh -800 ||y_scroll_pos >twelfth+800 ){
       $("#main_div_plan").css("display", "none");
       // $("#hide_divs_id_four").slideUp('slow');
       // $("#c_plan").css("font-size","28px");
     }
-if(y_scroll_pos > 10354.75 -800 && y_scroll_pos < twelfth+800) {
+if(y_scroll_pos >  eleventh  -800 && y_scroll_pos < twelfth+800) {
        $("#main_div_plan").css("display", "block");
 
      
