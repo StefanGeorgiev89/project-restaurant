@@ -49,11 +49,11 @@ $(document).ready(function(){
 $(document).ready(function(){
 
  $(".scroll_nav").click(function(evt){
-
+   
         evt.preventDefault();
    var b=$(this).closest('.dropdown').find('.hide_divs_class').attr('id')
    
-  $(".side-nav").css("margin-top", "0px");
+ // $(".side-nav").stop().animate({marginTop:'0px',},500);
   $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
       }, 1000);
@@ -107,6 +107,12 @@ $(window).on('scroll', function(evt) {
     var y_scroll_pos = window.pageYOffset;
             // set to whatever you want it to be
               evt.preventDefault();
+    if(y_scroll_pos > 150  ){
+    $(".side-nav").stop(true, false).animate({marginTop:'0px',},500);
+    }
+    if(y_scroll_pos < 150 ){
+        $(".side-nav").stop(true, false).animate({marginTop:'185px',},1000);
+    }
       //VENUE 
       //
       //
@@ -140,30 +146,16 @@ $(window).on('scroll', function(evt) {
       var twelfth = twelfth_img.offset().top -60
       var bot_element=$("#last_element")
       var bottom = bot_element.offset().top
-     
-       if(y_scroll_pos > 150 && y_scroll_pos < 4700 ) {
-       $("#main_div_venue").css("display", "block");     
-      
 
+    if(y_scroll_pos > 150 && y_scroll_pos < 4700 ) {
+       $("#main_div_venue").css("display", "block");     
        $("#hide_divs_id_one").slideDown('slow');    
-      
-    }
-    if(y_scroll_pos > 150  ){
-      $(".side-nav").stop().animate({marginTop:'0px',},400);
     }
    if(y_scroll_pos < 150 || y_scroll_pos >4700 ){
-           $("#main_div_venue").css("display", "none");
-      
+        $("#main_div_venue").css("display", "none");
         $("#hide_divs_id_one").slideUp('slow');
-      
-  
     }
-      if(y_scroll_pos < 150 ){
-        $(".side-nav").stop().animate({marginTop:'180px',},1000);
-       // $(".side-nav").css("margin-top", "180px");
-      
-         // $("#c_vanue").css("font-size","28px");
-    }
+
           evt.preventDefault();
     if(y_scroll_pos > second && y_scroll_pos <second+800){
          $("#building_div").css("display", "block");
@@ -219,7 +211,6 @@ if(y_scroll_pos > fifth && y_scroll_pos < fifth+800){
      
 if(y_scroll_pos > sixth&& y_scroll_pos < 7504) {
        $("#main_div_food").css("display", "block");
-       $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_two").slideDown('slow');
          
        // $("#c_food").css("font-size","35px");
@@ -255,7 +246,6 @@ if(y_scroll_pos > sixth&& y_scroll_pos < 7504) {
     }
 if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
        $("#main_div_ideas").css("display", "block");
-             $(".side-nav").css("margin-top", "0px");
        $("#hide_divs_id_three").slideDown('slow');
        // $("#c_ideas").css("font-size","35px");
     }
@@ -294,7 +284,7 @@ if(y_scroll_pos > ninth && y_scroll_pos < 10200) {
     }
 if(y_scroll_pos > 10354.75 -800 && y_scroll_pos < twelfth+800) {
        $("#main_div_plan").css("display", "block");
-              $(".side-nav").css("margin-top", "0px");
+
      
        // $("#hide_divs_id_four").slideDown('slow');
        // $("#c_plan").css("font-size","35px");
