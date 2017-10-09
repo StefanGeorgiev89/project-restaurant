@@ -30,6 +30,14 @@ body {
   // max-width: 2200em;
    max-width: 100%;
 }
+#IMGMAPS{
+	width:680px;
+	height:400px;
+}
+.plan {
+  min-height: 400px;
+ 
+}
 
 .bgimg-2 {
   background-image: url("Building 1904 x 900.jpg");
@@ -595,6 +603,11 @@ map{
 }
 area{
 	 outline: none;
+}
+
+.messagetextemail {
+	width:22em;
+    height:5em;
 }
 //
 

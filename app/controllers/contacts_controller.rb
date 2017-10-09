@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
 	def new 
 		@contact = Contact.new
-		render 'static_pages/home'
+		# render 'static_pages/home'
 	end
 
 	def create
