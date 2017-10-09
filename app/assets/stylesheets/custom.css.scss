@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Cormorant');
+
 body {
   height: 100%;
   margin: 0;
@@ -19,68 +20,82 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1000em;
+  // min-width: 70em;
+  max-width: 100%;
 }
 .bgimg-1 {
   background-image: url("Home 1904 x 900.jpg");
   //min-height: 100%;
   height: 26.875em;
+  // max-width: 2200em;
+   max-width: 100%;
 }
 
 .bgimg-2 {
   background-image: url("Building 1904 x 900.jpg");
   //min-height: 400px;
   height: 33.325em;
+  // max-width: 1000em;
 }
 .bgimg-3 {
   background-image: url("3.jpg");
   //min-height: 400px;
   height: 33.325em;
+  // max-width: 1000em;
 }
 .bgimg-4 {
   background-image: url("4.jpg");
   //min-height: 400px;
   height: 33.325em;
+  // max-width: 1000em;
 }
 .bgimg-5{
   background-image: url("5.jpg");
   //min-height: 400px;
   height: 33.325em;
+  // max-width: 1000em;
 }
 .bgimg-6{
   background-image: url("6.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-7{
   background-image: url("7.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-8{
   background-image: url("8.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-9{
   background-image: url("9.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-10{
   background-image: url("10.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-11{
   background-image: url("11.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .bgimg-12{
   background-image: url("12.jpg");
   //min-height: 400px;
    height: 33.325em;
+   // max-width: 1000em;
 }
 .caption {
   position: absolute;
@@ -290,7 +305,7 @@ h2 {
 @media screen and (min-width: 800px) {
 	.side-nav {
 		width: 20.5em;
-		height: 120em;
+		height: 140em;
 	}
 	.side-nav ul li span:nth-child(2) {
 		display: inline-block;
@@ -303,7 +318,7 @@ h2 {
 	}
 	.side-nav ul li a {
 		text-align: center;
-		font-size: 1.375em;
+		font-size: 1.575em;
 		// font-weight: bold;
 		font-family: Cormorant!important;
 	}
@@ -313,6 +328,7 @@ h2 {
 	.side-nav .logo span {
 		display: inline-block;
 	}	
+
 }
 
 
@@ -401,7 +417,11 @@ li {
    }
    .side-nav {
 	margin-right: 2em;
+	max-width: 20em;
 }
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 ,.bgimg-8,.bgimg-9,.bgimg-10,.bgimg-11,.bgimg-12{
+		width:100%;
+	}
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -426,6 +446,13 @@ li {
     margin-right:12em!important;
     font-family: Cormorant!important;
    }
+      .side-nav {
+	margin-right: 2em;
+	max-width: 20em;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 ,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7 ,.bgimg-8,.bgimg-9,.bgimg-10,.bgimg-11,.bgimg-12{
+		width:100%;
+	}
  
 }
 // p {
@@ -496,3 +523,79 @@ p {
 // @media only screen  and (min-width : 1824px) {
 // /* Styles */
 // }
+
+.hidden {
+	display:none;
+}
+.scroll_sub_nav {
+	font-family: Cormorant!important;
+}
+#m_area{
+	text-align:left;
+
+}
+
+
+//iPad in portrait & landscape
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+.side-nav{
+	height:100%;
+}
+
+}
+
+//iPhone 6 in portrait & landscape
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+.side-nav{
+	height:100%;
+}
+}
+
+
+
+//iPhone 6 Plus in portrait & landscape
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) { 
+.side-nav{
+	height:100%;
+}
+}
+
+//iPhone 5 & 5S in portrait & landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) { 
+
+.side-nav{
+	height:100%;
+}
+
+}
+
+
+//iPhone 2G-4S in portrait & landscape
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) { 
+.side-nav{
+	height:100%;
+}
+
+}
+map{
+	  outline: none;
+}
+area{
+	 outline: none;
+}
+//
+
+
