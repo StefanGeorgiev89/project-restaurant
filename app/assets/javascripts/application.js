@@ -15,28 +15,82 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+// $(document).ready(function(){
+//   $( "#IMGMAPS" ).mouseover(function(evt) {
+//             evt.preventDefault();
+//     $("#IMGMAPS").setAttribute('src', "/assets/showall.jpg");
+//          })
 
+ 
+// });
+// $(document).ready(function(){
+        
+//       $("#building").mouseenter(function (evt) {
+//          evt.preventDefault();
+//               $("#IMGMAPS").attr('src', '/assets/plan10.png');
+//         }).mouseleave(function (evt)
+//         {
+//          evt.preventDefault();
+//              $("#IMGMAPS").attr('src', '/assets/plan.png');
+
+//         });
+// });
+$(document).ready(function(){
+
+   
+
+     $("#building").mouseenter(function (evt) {
+     
+        var currentElement =  $("#hidden_p").text() 
+         evt.preventDefault();
+         if(currentElement.length==0){
+           // alert("A")
+              $("#IMGMAPS").attr('src', '/assets/qlan.png');
+}else{
+  // alert("B")
+   $("#IMGMAPS").attr('src',currentElement );
+}
+     $('area').click(function(evt){
+        evt.preventDefault();
+          var currentId =  $(this).data('imageurl');
+
+$("#IMGMAPS").attr('src', currentId);
+        $("#hidden_p").text(currentId)
+     })
+        }).mouseleave(function (evt)
+        {
+          var mouseLeave = $("#hidden_p").text() 
+          mouseLeave = setCharAt(mouseLeave,8,'q');
+          // alert(mouseLeave)
+         
+        
+           if(mouseLeave.length == 0){
+         // alert("C")
+              evt.preventDefault();
+             $("#IMGMAPS").attr('src', '/assets/plan.png');
+          // alert("D")
+           }
+           if(mouseLeave.length > 0){
+// alert("M")
+             $("#IMGMAPS").attr('src', mouseLeave);
+           }
+          
+
+        });
+
+   });
+  
 $(document).ready(function(){
 
     $('.plan_class').click(function(evt) {
       evt.preventDefault();
       var change = $('#change_content').children().first()
-       $(change).html(($( $(this).attr('id')).html()))
-
-
+      setTimeout($.proxy(function(){
+        $(change).html(($( $(this).attr('id')).html()))
+      }, this),500);
+     
     });
 });
-
-
-
-
-
-
-
-
-
-
-
 
 $(document).ready(function(){
    $('.scroll_sub_nav').click(function(evt) {
@@ -49,13 +103,6 @@ $(document).ready(function(){
 });
     });
 
-
-$(document).ready(function(){
-    $('area').click(function(evt){
-        evt.preventDefault();
-      var currentId =  $(this).data('imageurl');
-
-$("#IMGMAPS").attr('src', currentId);
   //     var color = $(this).css("background-color");
   //     $(this).css("background","#380606");
   // evt.preventDefault();
@@ -64,9 +111,7 @@ $("#IMGMAPS").attr('src', currentId);
   //     })
         // $('#modal-content').html('<img src=' + $(this).data('imageurl') +'>');
         // $('#modal-background').fadeIn();
-     })
 
-   });
   
 
 
@@ -326,7 +371,7 @@ if(y_scroll_pos > ninth && y_scroll_pos <  eleventh ) {
       // $("#hide_divs_id_four").slideUp('slow');
       // $("#c_plan").css("font-size","28px");
     }
-if(y_scroll_pos >  eleventh  -800 && y_scroll_pos < twelfth+1200) {
+if(y_scroll_pos >  eleventh  -800 && y_scroll_pos < twelfth+800) {
        $("#main_div_plan").css("display", "block");
 
      
@@ -335,3 +380,45 @@ if(y_scroll_pos >  eleventh  -800 && y_scroll_pos < twelfth+1200) {
     }
   
     });
+
+
+function setCharAt(mouseLeave,index,chr) {
+    if(index > mouseLeave.length-1) return mouseLeave;
+    return mouseLeave.substr(0,index) + chr + mouseLeave.substr(index+1);
+}
+// $(document).ready(function(){
+
+//     $('area').click(function(evt){
+//         evt.preventDefault();
+//       var currentId =  $(this).data('imageurl');
+
+// $("#IMGMAPS").attr('src', currentId);
+//   //     var color = $(this).css("background-color");
+//   //     $(this).css("background","#380606");
+//   // evt.preventDefault();
+//   //     $(this).bind("mouseout", function(){
+//   //       $(this).css("background","#123212");
+//   //     })
+//         // $('#modal-content').html('<img src=' + $(this).data('imageurl') +'>');
+//         // $('#modal-background').fadeIn();
+//      })
+//      $("#building").mouseenter(function (evt) {
+      
+//          evt.preventDefault();
+//               $("#IMGMAPS").attr('src', '/assets/plan10.png');
+//         }).mouseleave(function (evt)
+//         {
+//          evt.preventDefault();
+         
+//              $("#IMGMAPS").attr('src', currentId);
+
+//         });
+
+//    });
+
+
+
+
+
+
+
