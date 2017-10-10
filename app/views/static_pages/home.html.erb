@@ -216,41 +216,46 @@ A controller is a server-side component of Rails that responds to external reque
 <div class="col-md-8" >
   <div id="main_div_plan"  class="colortitle" style="display: none;"><h2>запитвания</h2>
   <!-- <div id="textdiv"> -->
+ <div class="col-md-6">
 <div class="skinny_wrapper wrapper_padding">
 <%= form_for @contact do |f| %>
-<%= f.label :name %> <br>
+<%= f.label :Име %> <br>
 <%= f.text_field :name, required: true %>
 <br>
 <%= f.label :email %><br>
 <%= f.email_field :email, required: true %>
 <br>
-<%= f.label :message %><br>
+<%= f.label :Запитване %><br>
 <%= f.text_area :message, as: :text, class: "messagetextemail"  %>
 <br>
 <div class="hidden">
 <%= f.label :nickname %><br>
 <%= f.text_field :nickname, hint: 'leave this field blank' %>
 </div>
-<%= f.submit 'Send Massage', class: "button" %>
+<%= f.submit 'Израти', class: "button" %>
 
 <%end%>
 </div> 
+
 <!--   <p>В ресторант „Ханами” може да се потопите в елегантна и изтънчена обстановка характеризираща се със семплата и изчистена визия на японския стил. Кухнята е интернационална, а в менюто предлагаме кулинарни ястия от близо и далеч, като акцентираме на здравословната храна приготвена с любов. Специално селектираните вина и приготвени ястия съчетани с отличното обслужване са способни да накарат всеки клиент да се почувства специален. Ресторант „Ханами” е разположен в новата бизнес сграда на фирма „Датекс” в Дружба 1 на последния етаж с прекрасна гледка към Витоша. Ресторанта разполага с 180 седящи места и може да осигури провеждането на коктейли над 250 човека. Капацитета и обстановката на ресторанта го правят подходящо място за провеждане на сватбени тържества, коктейли, гала-вечери, банкети, семейни и фирмени тържества, сватби, рожденни дни.</p>
   </div> -->
-<b>Ресторант ХАНАМИ</b><br/>
-София, Дружба 1, ул. Датекс 4<br/>
-тел.: 02 8165646/7/8<br/><br/>
-<b>Ресторант ДАТЕКС</b><br/>
-София, Цариградско шосе 115A<br/>
-тел.: 02 8165764/5/6<br/><br/>
-<a href="mailto:lfilipova@datecs.bg">lfilipova@datecs.bg</a><br/>
-
   
+<p>Ресторант ХАНАМИ</p><br/>
+<h4>София, Дружба 1, ул. Датекс 4<br/>
+тел.: 02 8165646/7/8</p><br/>
+<p>Ресторант ДАТЕКС</h4><br/>
+<h4>София, Цариградско шосе 115A<br/>
+тел.: 02 8165764/5/6</h4><br/>
+<a href="mailto:lfilipova@datecs.bg">lfilipova@datecs.bg</a><br/>
 </div>
+ 
+</div>
+ <div class="col-md-3">
 <iframe width="300" height="250" frameborder="0" scrolling="no" src="http://www.bgmaps.com/link/map/565cb0ddd2aaaf77389c09dce3ba914d"></iframe>
-</div>
-</div>
 
+</div>
+</div>
+</div>
 <!-- <div style="position:relative;">
   <div style="color:#black;background-color:#fff;text-align:center;padding:50px 80px;text-align: justify;">
     <p>Scroll up text 2.</p>
