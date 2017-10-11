@@ -36,7 +36,8 @@ gem 'jquery-rails'
 gem 'mail_form', '~> 1.7'
 gem 'simple_form'
 gem 'gmail', '~> 0.6.0'
-
+gem 'actionmailer', '~> 5.1.4'
+gem 'activemodel', '~> 5.1.4'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -190,6 +190,8 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  actionmailer (~> 5.1.4)
+  activemodel (~> 5.1.4)
   bootstrap-sass (~> 3.3.6)
   byebug
   capybara (~> 2.13)
